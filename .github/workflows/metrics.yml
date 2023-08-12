@@ -22,7 +22,6 @@ jobs:
           base_indepth: true
           config_octicon: yes
           config_timezone: Europe/Budapest
-          config_display: columns
           optimize: css, xml
 
           plugin_notable: yes
