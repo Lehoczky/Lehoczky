@@ -23,13 +23,19 @@ jobs:
           config_octicon: yes
           config_timezone: Europe/Budapest
           optimize: css, xml
+          extras_css: |
+            .items-wrapper > section:not(:last-of-type) {
+              margin-bottom: 14px;
+            }
+
+            .games .about>.infos:nth-child(2),
+            .games .about>.achievements {
+              display: none
+            }
 
           plugin_notable: yes
           plugin_notable_from: organization
           plugin_notable_types: commit
-
-          plugin_stars: yes
-          plugin_stars_limit: 3
 
           plugin_steam: yes
           plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
